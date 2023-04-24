@@ -1,0 +1,14 @@
+@import '1generales';
+@import '2variables';
+@import '3index';
+@import '4about';
+@import '5resume';
+@import '6portfolio';
+@import '7contact';
+
+/* @Media (max-width ...px) { */
+    @import '8media1280';
+    @import '9media730';
+/* 
+    } 
+*/

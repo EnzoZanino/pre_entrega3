@@ -1,0 +1,144 @@
+.contenedor-general {
+    height: 100vh; width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/cielo2.jpg);
+    background-size: cover;
+    .contenedor-1 {
+        .barra-menu {
+            .iconos {
+                a { text-decoration: none; }
+
+                height: 95%;
+                width: 100%;
+                display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+                filter: opacity(90%);
+
+                .seccion-portfolio-in {
+                    display: flex;
+                    align-items: center;
+                    height: 8vh; width: 18vh;
+                    margin-left: 10vh;
+                    .icon-portfolio-in {
+                        background-image: url(../img/logo-portfolio2.png);
+                        background-color: white;
+                        background-size: cover;
+                        height: 8vh; width: 8vh;
+                        border-radius: 1vh;
+                        filter: opacity(100%);
+                        box-shadow: 0px 0px 23px 5px white;
+                    }
+                    .name-portfolio-in {
+                        display: flex; align-items: center; justify-content: center;
+                        background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
+                        height: 2.5vh; width: 8vh; margin-left: 2vh;
+                        color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
+                        vertical-align: middle;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .contenedor-2{
+        .contenedor-borde {
+            .contenedor-divisor-portfolio {
+                display: flex; justify-content: center;
+                height: 70vh; width: 80%;
+                padding-top: 1vh;
+                /* border: solid 1px white; */ /* comentar al final */
+                border-radius: 2vh;
+                /* background-image: url(../img/backgroundOPC/black20.png); */
+                background-image: url(../img/backgroundOPC/white20.png);
+                /* background-image: url(../img/interior2.png); background-size: cover; */
+                .contenido-portfolio {
+                    height: 95%; width: 90%;
+                    display: flex; flex-direction: column; align-items: center;
+                    /* background-image: url(../img/backgroundOPC/black20.png);  */border-radius: 2vh;
+                    .grid-contenido {
+                        text-align: center;
+                        height: 90%; width: 90%;
+                        margin: 1vh; gap: 2vh;
+                        display: grid;
+                        grid-template: repeat(3, 18vh)/ repeat(4, 1fr);
+                        /* grid-template-areas:
+                            "proyecto1 proyecto3 agregar2 agregar2"
+                            "proyecto1 agregar4 agregar4 agregar1"
+                            "proyecto2 agregar4 agregar4 agregar11"
+                        ; */
+                        div {
+                            background-image: url(../img/backgroundOPC/black40.png);
+                            border-radius: 2vh;
+                            display: flex; justify-content: center; align-items: center;
+                            a {
+                                text-decoration: none;
+                                border: solid 1px white; border-radius: 0.5vh;
+                            }
+                        }
+                        .proyecto1 {
+                            background-image: url(../img/img_portfolio/proyecto1.jpg); background-size: cover;
+                            grid-area: proyecto1;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 2;
+                            grid-row-end: 3;
+                        }
+                        .proyecto2 {
+                            background-image: url(../img/img_portfolio/proyecto2.jpg); background-size: cover;
+                            grid-area: proyecto2;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 4;
+                        }
+                        .proyecto3 {
+                            background-image: url(../img/img_portfolio/proyecto3.jpg); background-size: cover;
+                            grid-area: proyecto3;
+                            grid-column-start: span 1;
+                            grid-column-end: 3;
+                            grid-row-start: span 1;
+                            grid-row-end: 2;
+                        }
+                        .agregar4 {
+                            grid-area: agregar4;
+                            grid-column-start: span 2;
+                            grid-column-end: 4;
+                            grid-row-start: span 2;
+                            grid-row-end: 4;
+                        }
+                        .agregar2 {
+                            grid-area: agregar2;
+                            grid-column-start: span 2;
+                            grid-column-end: 5;
+                            grid-row-start: span 1;
+                            grid-row-end: 2;
+                        }
+                        .agregar1 {
+                            grid-area: agregar1;
+                            grid-column-start: span 1;
+                            grid-column-end: 5;
+                            grid-row-start: span 1;
+                            grid-row-end: 3;
+                        }
+                        .agregar11 {
+                            grid-area: agregar1;
+                            grid-column-start: span 1;
+                            grid-column-end: 5;
+                            grid-row-start: span 1;
+                            grid-row-end: 4;
+                        }
+                        .entrega {
+                            font-size: 2.5vh;
+                            color: white;
+                        }
+                        .mas {
+                            font-size: 10vh;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
