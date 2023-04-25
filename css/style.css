@@ -10,13 +10,19 @@ h1 {
   font-size: 6.1vh;
 }
 
+h2 {
+  padding-left: 6.5vh;
+  padding-top: 0.2vh;
+  font-size: 2vh;
+}
+
 .contenedor-general {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/cielo2.jpg);
+  background-image: url(../img/cielo2large.jpg);
   background-size: cover;
 }
 .contenedor-general .contenedor-1 {
@@ -355,6 +361,11 @@ h1 {
   border-radius: 12px;
   filter: opacity(100%);
 }
+.contenedor-general .linea-intermedia {
+  height: 80vh;
+  width: 0.1px;
+  border-left: solid 1.5px white;
+}
 .contenedor-general .contenedor-2 {
   height: 100vh;
   width: 82%;
@@ -362,15 +373,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.contenedor-general .contenedor-2 .contenedor-borde {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100%;
-  border-left: solid 1.5px white;
-}
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index {
+.contenedor-general .contenedor-2 .contenedor-divisor-index {
   /* padding: 10vh; */
   display: flex;
   justify-content: space-evenly;
@@ -382,7 +385,7 @@ h1 {
   background-image: url(../img/backgroundOPC/white20.png);
   /* background-image: url(../img/interior2.png); background-size: cover; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,15 +393,7 @@ h1 {
   /* background-color: crimson; */
   border-radius: 2vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left h1 {
-  font-size: 6.1vh;
-}
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left h2 {
-  padding-left: 6.5vh;
-  padding-top: 0.2vh;
-  font-size: 2vh;
-}
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links {
   display: flex;
   justify-content: space-around;
   height: 3vh;
@@ -406,7 +401,7 @@ h1 {
   margin-top: 2vh;
   filter: opacity(60%);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-facebook {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-facebook {
   height: 3vh;
   width: 3vh;
   border-radius: 0.5vh;
@@ -414,10 +409,10 @@ h1 {
   background-size: cover;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-facebook:hover {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-facebook:hover {
   background-image: url(../img/logo-facebook2.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-instagram {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-instagram {
   height: 3vh;
   width: 3vh;
   border-radius: 0.5vh;
@@ -425,10 +420,10 @@ h1 {
   background-size: cover;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-instagram:hover {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-instagram:hover {
   background-image: url(../img/logo-instagram2.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-twitter {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-twitter {
   height: 3vh;
   width: 3vh;
   border-radius: 0.5vh;
@@ -436,10 +431,10 @@ h1 {
   background-size: cover;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-twitter:hover {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-twitter:hover {
   background-image: url(../img/logo-twitter2.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-github {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-github {
   height: 3vh;
   width: 3vh;
   border-radius: 0.5vh;
@@ -447,10 +442,10 @@ h1 {
   background-size: cover;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-github:hover {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-github:hover {
   background-image: url(../img/logo-github2.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-linkedin {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-linkedin {
   height: 3vh;
   width: 3vh;
   border-radius: 0.5vh;
@@ -458,17 +453,17 @@ h1 {
   background-size: cover;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-left .social-links .icon-linkedin:hover {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-linkedin:hover {
   background-image: url(../img/logo-linkedin2.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-right {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-right {
   display: flex;
   justify-content: end;
   align-items: center;
   filter: opacity(80%);
   /* background-image: url(../img/perfil.png); background-size: cover; filter: opacity(60%); */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-right .circle-perfil-e {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-right .circle-perfil-e {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,7 +472,7 @@ h1 {
   background-image: url(../img/backgroundOPC/white20.png);
   border-radius: 30vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index .content-right .circle-perfil-e .circle-perfil-i {
+.contenedor-general .contenedor-2 .contenedor-divisor-index .content-right .circle-perfil-e .circle-perfil-i {
   height: 33vh;
   width: 33vh;
   background-color: lightslategray;
@@ -486,15 +481,6 @@ h1 {
   border-radius: 40vh;
 }
 
-.contenedor-general {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/cielo2.jpg);
-  background-size: cover;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos {
   height: 95%;
   width: 100%;
@@ -605,7 +591,7 @@ h1 {
   vertical-align: middle;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor {
+.contenedor-general .contenedor-2 .contenedor-divisor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -617,7 +603,7 @@ h1 {
   background-image: url(../img/backgroundOPC/white20.png);
   /* background-image: url(../img/interior2.png); background-size: cover; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -628,10 +614,7 @@ h1 {
   color: rgb(92, 82, 86);
   /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about h1 {
-  font-size: 6.1vh;
-}
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p {
   font-size: 2vh;
   padding: 4vh 8vh;
   /*  border-radius: 2vh; */
@@ -639,22 +622,13 @@ h1 {
   border-radius: 2vh;
   background-image: url(../img/backgroundOPC/white40.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p mark {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p mark {
   color: rgb(92, 82, 86);
   /* background-image: url(../img/backgroundOPC/black20.png); */
   background-color: white;
   /* border-radius: 0.1vh; */
 }
 
-.contenedor-general {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/cielo2.jpg);
-  background-size: cover;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos {
   height: 95%;
   width: 100%;
@@ -700,7 +674,7 @@ h1 {
   vertical-align: middle;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -712,7 +686,7 @@ h1 {
   background-image: url(../img/backgroundOPC/white20.png);
   /* background-image: url(../img/interior2.png); background-size: cover; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -721,7 +695,7 @@ h1 {
   /* background-color: white; */
   font-size: 1.5vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .edu-exp {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .edu-exp {
   margin-bottom: 3vh;
   padding: 2.5vh 1.5vh;
   height: 100%;
@@ -735,21 +709,21 @@ h1 {
   grid-template-areas: "tecnico operador desarrollador";
   text-align: center;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .titulo-exp {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .titulo-exp {
   margin-bottom: 1vh;
   color: darkgoldenrod;
   background-image: url(../img/backgroundOPC/white40.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .seccion-exp {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .seccion-exp {
   background-image: url(../img/backgroundOPC/black10.png);
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .descripcion-exp {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .descripcion-exp {
   margin-left: 1.5vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .descripcion {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .descripcion {
   background-color: white;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .tecnico-electricista {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .tecnico-electricista {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -759,7 +733,7 @@ h1 {
   padding-left: 2vh;
   grid-area: tecnico;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .operador {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .operador {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -769,7 +743,7 @@ h1 {
   margin-left: 1vh;
   padding-left: 2vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .desarrollo-web {
+.contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .desarrollo-web {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -780,15 +754,10 @@ h1 {
   padding-left: 2vh;
 }
 
-.contenedor-general {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/cielo2.jpg);
-  background-size: cover;
+.resume-bg {
+  background-image: url(../img/cielo2large.jpg);
 }
+
 .contenedor-general .contenedor-1 .barra-menu .iconos {
   height: 95%;
   width: 100%;
@@ -834,7 +803,7 @@ h1 {
   vertical-align: middle;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio {
   display: flex;
   justify-content: center;
   height: 70vh;
@@ -846,7 +815,7 @@ h1 {
   background-image: url(../img/backgroundOPC/white20.png);
   /* background-image: url(../img/interior2.png); background-size: cover; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio {
   height: 95%;
   width: 90%;
   display: flex;
@@ -855,7 +824,7 @@ h1 {
   /* background-image: url(../img/backgroundOPC/black20.png);  */
   border-radius: 2vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
   text-align: center;
   height: 90%;
   width: 90%;
@@ -869,19 +838,19 @@ h1 {
       "proyecto2 agregar4 agregar4 agregar11"
   ; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div {
   background-image: url(../img/backgroundOPC/black40.png);
   border-radius: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div a {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div a {
   text-decoration: none;
   border: solid 1px white;
   border-radius: 0.5vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto1 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto1 {
   background-image: url(../img/img_portfolio/proyecto1.jpg);
   background-size: cover;
   grid-area: proyecto1;
@@ -890,7 +859,7 @@ h1 {
   grid-row-start: span 2;
   grid-row-end: 3;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto2 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto2 {
   background-image: url(../img/img_portfolio/proyecto2.jpg);
   background-size: cover;
   grid-area: proyecto2;
@@ -899,7 +868,7 @@ h1 {
   grid-row-start: span 1;
   grid-row-end: 4;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto3 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto3 {
   background-image: url(../img/img_portfolio/proyecto3.jpg);
   background-size: cover;
   grid-area: proyecto3;
@@ -908,52 +877,43 @@ h1 {
   grid-row-start: span 1;
   grid-row-end: 2;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar4 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar4 {
   grid-area: agregar4;
   grid-column-start: span 2;
   grid-column-end: 4;
   grid-row-start: span 2;
   grid-row-end: 4;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar2 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar2 {
   grid-area: agregar2;
   grid-column-start: span 2;
   grid-column-end: 5;
   grid-row-start: span 1;
   grid-row-end: 2;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar1 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar1 {
   grid-area: agregar1;
   grid-column-start: span 1;
   grid-column-end: 5;
   grid-row-start: span 1;
   grid-row-end: 3;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar11 {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar11 {
   grid-area: agregar1;
   grid-column-start: span 1;
   grid-column-end: 5;
   grid-row-start: span 1;
   grid-row-end: 4;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .entrega {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .entrega {
   font-size: 2.5vh;
   color: white;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .mas {
+.contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .mas {
   font-size: 10vh;
   color: white;
 }
 
-.contenedor-general {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/cielo2.jpg);
-  background-size: cover;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos {
   height: 95%;
   width: 100%;
@@ -999,7 +959,7 @@ h1 {
   vertical-align: middle;
   transition: 0.5s;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact {
   flex-direction: column;
   display: flex;
   flex-direction: column;
@@ -1012,15 +972,11 @@ h1 {
   color: rgb(92, 82, 86);
   /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact h1 {
-  font-size: 6.1vh;
-  padding-bottom: 2vh;
-}
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact label {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact label {
   font-size: 2.5vh;
   display: block;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact input {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact input {
   background: transparent;
   background-image: url(../img/backgroundOPC/white80.png);
   border: none;
@@ -1030,7 +986,7 @@ h1 {
   height: 2.5vh;
   width: 30vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact textarea {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact textarea {
   background: transparent;
   background-image: url(../img/backgroundOPC/white80.png);
   border: none;
@@ -1039,7 +995,7 @@ h1 {
   width: 30vh;
   padding: 0.5vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact .button-submit {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact .button-submit {
   font-family: "Signika", sans-serif;
   color: rgb(92, 82, 86);
   box-shadow: 0px 0px 5px 1px rgb(22, 175, 230);
@@ -1048,828 +1004,14 @@ h1 {
   height: 3vh;
   width: 12vh;
 }
-.contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenido-contact .button-submit:active {
+.contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact .button-submit:active {
   background-color: rgb(22, 175, 230);
   box-shadow: 0px 0px 5px 1px rgb(67, 188, 231);
   border: solid 1px black;
 }
 
 /* @Media (max-width ...px) { */
-@media (max-width: 1280px) {
-  .contenedor-general {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-  }
-  .contenedor-general .contenedor-1 {
-    height: 12%;
-    width: 100%;
-    margin-top: 2.5vh;
-    margin-bottom: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-general .contenedor-1 .barra-menu {
-    margin-left: 0;
-    height: 2.75vh;
-    width: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 1vh;
-    background-image: url(../img/backgroundOPC/white50.png);
-    filter: opacity(80%);
-    transition: 1.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu:hover {
-    width: 52vh;
-    height: 2.75vh;
-    filter: opacity(90%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos {
-    height: 100%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> */
-    /* <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> */
-    /* <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> */
-    /* <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> <<<SECCION-OUT>>> */
-    /* <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> */
-    /* <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> */
-    /* <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> */
-    /* <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> <<<SECCION-IN>>> */
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos a {
-    text-decoration: none;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12vh;
-    width: 8vh;
-    margin: 0;
-    margin-top: 1vh;
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(../img/logo-home.png);
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home:hover {
-    margin-left: -1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-home2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .name-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    position: relative;
-    right: 1vh;
-    bottom: 2.5vh;
-    color: black;
-    font-size: 0.75vh;
-    font-family: "Signika", sans-serif;
-    border-radius: 1vh;
-    height: 1.25vh;
-    width: 4vh;
-    margin-left: 2vh;
-    background-color: white;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover {
-    height: 12.5vh;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .name-home {
-    transform: translateX(0vh);
-    transform: translateY(4.5vh);
-    height: 2.5vh;
-    width: 8vh;
-    font-size: 1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .icon-home {
-    margin: 0;
-    margin-top: 1.2vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-home2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12vh;
-    width: 8vh;
-    margin: 0;
-    margin-top: 1vh;
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(../img/logo-about.png);
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about:hover {
-    margin-left: -1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-about2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .name-about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    position: relative;
-    right: 1vh;
-    bottom: 2.5vh;
-    color: black;
-    font-size: 0.75vh;
-    font-family: "Signika", sans-serif;
-    border-radius: 1vh;
-    height: 1.25vh;
-    width: 4vh;
-    margin-left: 2vh;
-    background-color: white;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover {
-    height: 12.5vh;
-    /* .icon-home {
-        height: 5vh; width: 5vh;
-        background-image: url(../img/logo-home.png);
-    } */
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .icon-about {
-    margin: 0;
-    margin-top: 1.2vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-about2v2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .name-about {
-    transform: translateX(0vh);
-    transform: translateY(4.5vh);
-    height: 2.5vh;
-    width: 8vh;
-    font-size: 1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12vh;
-    width: 8vh;
-    margin: 0;
-    margin-top: 1vh;
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(../img/logo-resume.png);
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume:hover {
-    margin-left: -1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-resume2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .name-resume {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    position: relative;
-    right: 1vh;
-    bottom: 2.5vh;
-    color: black;
-    font-size: 0.75vh;
-    font-family: "Signika", sans-serif;
-    border-radius: 1vh;
-    height: 1.25vh;
-    width: 4vh;
-    margin-left: 2vh;
-    background-color: white;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover {
-    height: 12.5vh;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .name-resume {
-    transform: translateX(0vh);
-    transform: translateY(4.5vh);
-    height: 2.5vh;
-    width: 8vh;
-    font-size: 1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .icon-resume {
-    margin: 0;
-    margin-top: 1.2vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-resume2v2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12vh;
-    width: 8vh;
-    margin: 0;
-    margin-top: 1vh;
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(../img/logo-portfolio.png);
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio:hover {
-    margin-left: -1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-portfolio2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .name-portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.25vh;
-    width: 4vh;
-    z-index: -1;
-    position: relative;
-    right: 1vh;
-    bottom: 2.5vh;
-    color: black;
-    font-size: 0.75vh;
-    font-family: "Signika", sans-serif;
-    border-radius: 1vh;
-    margin-left: 2vh;
-    background-color: white;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover {
-    height: 12.5vh;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .name-portfolio {
-    transform: translateX(0vh);
-    transform: translateY(4.5vh);
-    height: 2.5vh;
-    width: 8vh;
-    font-size: 1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .icon-portfolio {
-    margin: 0;
-    margin-top: 1.2vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-portfolio2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12vh;
-    width: 8vh;
-    margin: 0;
-    margin-top: 1vh;
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact {
-    background-color: white;
-    height: 5vh;
-    width: 5vh;
-    background-image: url(../img/logo-contacto.png);
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-    transition: 1s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact:hover {
-    margin-left: -1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-contacto2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .name-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    position: relative;
-    right: 1vh;
-    bottom: 2.5vh;
-    color: black;
-    font-size: 0.75vh;
-    font-family: "Signika", sans-serif;
-    border-radius: 1vh;
-    height: 1.25vh;
-    width: 4vh;
-    margin-left: 2vh;
-    background-color: white;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover {
-    height: 12.5vh;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .name-contact {
-    transform: translateX(0vh);
-    transform: translateY(4.5vh);
-    height: 2.5vh;
-    width: 8vh;
-    font-size: 1.5vh;
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .icon-contact {
-    margin: 0;
-    margin-top: 1.2vh;
-    box-shadow: 0px 0px 23px 5px white;
-    background-image: url(../img/logo-contacto2.png);
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 12px;
-    filter: opacity(100%);
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5vh;
-    width: 8vh;
-    margin-top: 4vh;
-    margin-left: 0;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .icon-home-in {
-    background-image: url(../img/logo-home2.png);
-    background-color: white;
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 1vh;
-    filter: opacity(100%);
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .name-home-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 23px 5px white;
-    border-radius: 1vh;
-    height: 2.5vh;
-    width: 8vh;
-    margin-top: 2vh;
-    margin-left: 0;
-    color: black;
-    font-size: 1.5vh;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5vh;
-    width: 8vh;
-    margin-top: 4vh;
-    margin-left: 0;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .icon-about-in {
-    background-image: url(../img/logo-about2v2.png);
-    background-color: white;
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 1vh;
-    filter: opacity(100%);
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .name-about-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 23px 5px white;
-    border-radius: 1vh;
-    height: 2.5vh;
-    width: 8vh;
-    margin-top: 2vh;
-    margin-left: 0;
-    color: black;
-    font-size: 1.5vh;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5vh;
-    width: 8vh;
-    margin-top: 4vh;
-    margin-left: 0;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .icon-resume-in {
-    background-image: url(../img/logo-resume2v2.png);
-    background-color: white;
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 1vh;
-    filter: opacity(100%);
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .name-resume-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 23px 5px white;
-    border-radius: 1vh;
-    height: 2.5vh;
-    width: 8vh;
-    margin-top: 2vh;
-    margin-left: 0;
-    color: black;
-    font-size: 1.5vh;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5vh;
-    width: 8vh;
-    margin-top: 4vh;
-    margin-left: 0;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .icon-portfolio-in {
-    background-image: url(../img/logo-portfolio2.png);
-    background-color: white;
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 1vh;
-    filter: opacity(100%);
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .name-portfolio-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 23px 5px white;
-    border-radius: 1vh;
-    height: 2.5vh;
-    width: 8vh;
-    margin-top: 2vh;
-    margin-left: 0;
-    color: black;
-    font-size: 1.5vh;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5vh;
-    width: 8vh;
-    margin-top: 4vh;
-    margin-left: 0;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .icon-contact-in {
-    background-image: url(../img/logo-contacto2.png);
-    background-color: white;
-    background-size: cover;
-    height: 8vh;
-    width: 8vh;
-    border-radius: 1vh;
-    filter: opacity(100%);
-    box-shadow: 0px 0px 23px 5px white;
-  }
-  .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .name-contact-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0px 0px 23px 5px white;
-    border-radius: 1vh;
-    height: 2.5vh;
-    width: 8vh;
-    margin-top: 2vh;
-    margin-left: 0;
-    color: black;
-    font-size: 1.5vh;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s;
-  }
-  .contenedor-general .linea-vertical {
-    margin-top: 2.5vh;
-    height: 1px;
-    width: 80%;
-    border-top: solid 1px white;
-  }
-  .contenedor-general .contenedor-2 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border: none;
-    /* border-top: solid 1.5px white; */
-    /* .contenedor-divisor-index {
-        height: 100%;
-    } */
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor {
-    height: 70vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    text-align: justify;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p {
-    font-size: 2vh;
-    padding: 3vh 3vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p mark {
-    width: 100%;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95%;
-    width: 95%;
-    margin-bottom: 2vh;
-    border-radius: 2vh;
-    background-image: url(../img/backgroundOPC/white20.png);
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    /* background-color: white; */
-    font-size: 1.5vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .edu-exp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 3vh;
-    padding: 2.5vh 1.5vh;
-    height: 100%;
-    width: 95%;
-    background-image: url(../img/backgroundOPC/white30.png);
-    border: solid 1px white;
-    border-radius: 2vh;
-    text-align: center;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .titulo-exp {
-    margin-bottom: 1vh;
-    color: darkgoldenrod;
-    background-image: url(../img/backgroundOPC/white40.png);
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .seccion-exp {
-    background-image: url(../img/backgroundOPC/black10.png);
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .descripcion-exp {
-    margin-left: 1.5vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .descripcion {
-    background-color: white;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .tecnico-electricista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: solid 1px white;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 2vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .operador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: solid 1px white;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 2vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-resume .contenido-resume .desarrollo-web {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: solid 1px white;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 2vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio {
-    display: flex;
-    justify-content: center;
-    height: 70vh;
-    width: 80%;
-    padding-top: 1vh;
-    /* border: solid 1px white; */ /* comentar al final */
-    border-radius: 2vh;
-    /* background-image: url(../img/backgroundOPC/black20.png); */
-    background-image: url(../img/backgroundOPC/white20.png);
-    /* background-image: url(../img/interior2.png); background-size: cover; */
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio {
-    height: 95%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-image: url(../img/backgroundOPC/black20.png);  */
-    border-radius: 2vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
-    text-align: center;
-    height: 90%;
-    width: 90%;
-    margin: 1vh;
-    gap: 2vh;
-    display: grid;
-    grid-template: repeat(3, 18vh)/repeat(4, 1fr);
-    /* grid-template-areas:
-        "proyecto1 proyecto3 agregar2 agregar2"
-        "proyecto1 agregar4 agregar4 agregar1"
-        "proyecto2 agregar4 agregar4 agregar11"
-    ; */
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div {
-    background-image: url(../img/backgroundOPC/black40.png);
-    border-radius: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div a {
-    text-decoration: none;
-    border: solid 1px white;
-    border-radius: 0.5vh;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto1 {
-    background-image: url(../img/img_portfolio/proyecto1.jpg);
-    background-size: cover;
-    grid-area: proyecto1;
-    grid-column-start: span 1;
-    grid-column-end: 2;
-    grid-row-start: span 2;
-    grid-row-end: 3;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto2 {
-    background-image: url(../img/img_portfolio/proyecto2.jpg);
-    background-size: cover;
-    grid-area: proyecto2;
-    grid-column-start: span 1;
-    grid-column-end: 2;
-    grid-row-start: span 1;
-    grid-row-end: 4;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto3 {
-    background-image: url(../img/img_portfolio/proyecto3.jpg);
-    background-size: cover;
-    grid-area: proyecto3;
-    grid-column-start: span 1;
-    grid-column-end: 3;
-    grid-row-start: span 1;
-    grid-row-end: 2;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar4 {
-    grid-area: agregar4;
-    grid-column-start: span 2;
-    grid-column-end: 4;
-    grid-row-start: span 2;
-    grid-row-end: 4;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar2 {
-    grid-area: agregar2;
-    grid-column-start: span 2;
-    grid-column-end: 5;
-    grid-row-start: span 1;
-    grid-row-end: 2;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar1 {
-    grid-area: agregar1;
-    grid-column-start: span 1;
-    grid-column-end: 5;
-    grid-row-start: span 1;
-    grid-row-end: 3;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar11 {
-    grid-area: agregar1;
-    grid-column-start: span 1;
-    grid-column-end: 5;
-    grid-row-start: span 1;
-    grid-row-end: 4;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .entrega {
-    font-size: 2.5vh;
-    color: white;
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .mas {
-    font-size: 10vh;
-    color: white;
-  }
-}
-@media (max-width: 730px) {
+@media (max-width: 1300px) {
   .contenedor-general {
     display: flex;
     flex-direction: column;
@@ -2450,10 +1592,11 @@ h1 {
     font-family: "Signika", sans-serif;
     transition: 0.5s;
   }
-  .contenedor-general .linea-vertical {
+  .contenedor-general .linea-intermedia {
     margin-top: 2.5vh;
-    height: 1px;
+    height: 0.1px;
     width: 80%;
+    border: none;
     border-top: solid 1px white;
   }
   .contenedor-general .contenedor-2 {
@@ -2463,23 +1606,10 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border: none;
-    /* border-top: solid 1.5px white; */
-    /* .contenedor-divisor-index {
-        height: 100%;
-    } */
-  }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor {
+  .contenedor-general .contenedor-2 .contenedor-divisor {
     height: 95%;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about {
+  .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about {
     width: 95%;
     height: 95%;
     display: flex;
@@ -2488,20 +1618,20 @@ h1 {
     /* background-color: yellow; */
     text-align: center;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p {
+  .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p {
     font-size: 1.8vh;
     margin-top: 0.5vh;
     padding: 0.5vh 1vh;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor .contenedor-texto-about p mark {
+  .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p mark {
     width: 100%;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-index {
+  .contenedor-general .contenedor-2 .contenedor-divisor-index {
     flex-direction: column;
     align-items: center;
     height: 90%;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio {
     display: flex;
     justify-content: center;
     height: 70vh;
@@ -2513,7 +1643,7 @@ h1 {
     background-image: url(../img/backgroundOPC/white20.png);
     /* background-image: url(../img/interior2.png); background-size: cover; */
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio {
     height: 95%;
     width: 90%;
     display: flex;
@@ -2522,7 +1652,7 @@ h1 {
     /* background-image: url(../img/backgroundOPC/black20.png);  */
     border-radius: 2vh;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
     text-align: center;
     height: 90%;
     width: 90%;
@@ -2536,19 +1666,19 @@ h1 {
         "proyecto2 agregar4 agregar4 agregar11"
     ; */
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div {
     background-image: url(../img/backgroundOPC/black40.png);
     border-radius: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div a {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido div a {
     text-decoration: none;
     border: solid 1px white;
     border-radius: 0.5vh;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto1 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto1 {
     background-image: url(../img/img_portfolio/proyecto1.jpg);
     background-size: cover;
     grid-area: proyecto1;
@@ -2557,7 +1687,7 @@ h1 {
     grid-row-start: span 1;
     grid-row-end: 2;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto2 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto2 {
     background-image: url(../img/img_portfolio/proyecto2.jpg);
     background-size: cover;
     grid-area: proyecto2;
@@ -2566,7 +1696,7 @@ h1 {
     grid-row-start: span 1;
     grid-row-end: 3;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto3 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .proyecto3 {
     background-image: url(../img/img_portfolio/proyecto3.jpg);
     background-size: cover;
     grid-area: proyecto3;
@@ -2575,58 +1705,45 @@ h1 {
     grid-row-start: span 1;
     grid-row-end: 4;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar4 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar4 {
     grid-area: agregar4;
     grid-column-start: span 1;
     grid-column-end: 2;
     grid-row-start: span 1;
     grid-row-end: 5;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar2 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar2 {
     grid-area: agregar2;
     grid-column-start: span 1;
     grid-column-end: 2;
     grid-row-start: span 1;
     grid-row-end: 6;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar1 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar1 {
     grid-area: agregar1;
     grid-column-start: span 1;
     grid-column-end: 2;
     grid-row-start: span 1;
     grid-row-end: 7;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar11 {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .agregar11 {
     grid-column-start: span 1;
     grid-column-end: 2;
     grid-row-start: span 1;
     grid-row-end: 8;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .entrega {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .entrega {
     font-size: 2.5vh;
     color: white;
   }
-  .contenedor-general .contenedor-2 .contenedor-borde .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .mas {
+  .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido .mas {
     font-size: 10vh;
     color: white;
   }
   .contenedor-general .contenedor2-resume {
     height: 180vh;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border: none;
-    /* border-top: solid 1.5px white; */
-    /* .contenedor-divisor-index {
-        height: 100%;
-    } */
-  }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2636,7 +1753,7 @@ h1 {
     border-radius: 2vh;
     background-image: url(../img/backgroundOPC/white20.png);
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2645,7 +1762,7 @@ h1 {
     /* background-color: white; */
     font-size: 1.5vh;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .edu-exp {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .edu-exp {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -2658,21 +1775,21 @@ h1 {
     border-radius: 2vh;
     text-align: center;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .titulo-exp {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .titulo-exp {
     margin-bottom: 1vh;
     color: darkgoldenrod;
     background-image: url(../img/backgroundOPC/white40.png);
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .seccion-exp {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .seccion-exp {
     background-image: url(../img/backgroundOPC/black10.png);
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .descripcion-exp {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .descripcion-exp {
     margin-left: 1.5vh;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .descripcion {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .descripcion {
     background-color: white;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .tecnico-electricista {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .tecnico-electricista {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2684,7 +1801,7 @@ h1 {
     padding-bottom: 2vh;
     grid-area: tecnico;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .operador {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .operador {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2696,7 +1813,7 @@ h1 {
     padding: 0;
     padding-bottom: 2vh;
   }
-  .contenedor-general .contenedor2-resume .contenedor-borde-resume .contenedor-divisor-resume .contenido-resume .desarrollo-web {
+  .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .desarrollo-web {
     display: flex;
     flex-direction: column;
     align-items: center;

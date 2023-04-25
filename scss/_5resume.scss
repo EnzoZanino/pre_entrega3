@@ -1,10 +1,4 @@
 .contenedor-general {
-    height: 100vh; width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/cielo2.jpg);
-    background-size: cover;
     .contenedor-1 {
         .barra-menu {
             .iconos {
@@ -42,70 +36,71 @@
         }
     }
     .contenedor-2{
-        .contenedor-borde {
-            .contenedor-divisor-resume {
-                display: flex; justify-content: center; align-items: center;
-                height: 90vh; width: 90%;
-                /* border: solid 1px white; */ /* comentar al final */
-                border-radius: 2vh;
-                /* background-image: url(../img/backgroundOPC/black20.png); */
-                background-image: url(../img/backgroundOPC/white20.png);
-                /* background-image: url(../img/interior2.png); background-size: cover; */
-                .contenido-resume {
-                    display: flex; flex-direction: column; align-items: center;
-                    height: 100%; width: 100%;
-                    /* background-color: white; */
-                    font-size: 1.5vh;
-                    .edu-exp {
-                        margin-bottom: 3vh;
-                        padding: 2.5vh 1.5vh;
-                        height: 100%; width: 95%;
-                        background-image: url(../img/backgroundOPC/white30.png);
-                        border: solid 1px white; border-radius: 2vh;
-                        display: grid; gap: 1.5vh;
-                        grid-template: repeat(1, 1fr)/ repeat(3, 1fr);
-                        grid-template-areas: 
-                            "tecnico operador desarrollador"
-                        ;
-                        text-align: center;
-                    }
-                    .titulo-exp {
-                        margin-bottom: 1vh;
-                        color: darkgoldenrod;
-                        background-image: url(../img/backgroundOPC/white40.png);
-                    }
-                    .seccion-exp {
-                        background-image: url(../img/backgroundOPC/black10.png);
-                    }
-                    .descripcion-exp {
-                        margin-left: 1.5vh;
-                    }
-                    .descripcion {
-                        background-color: white;
-                    }
-                    .tecnico-electricista {
-                        display: flex; flex-direction: column; align-items: center; justify-content: center;
-                        border-left: solid 1px white;
-                        margin-left: 1vh;
-                        padding-left: 2vh;
-                        grid-area: tecnico;
-                    }
-                    .operador {
-                        display: flex; flex-direction: column; align-items: center; justify-content: center;
-                        border-left: solid 1px white;
-                        grid-area: operador;
-                        margin-left: 1vh;
-                        padding-left: 2vh;
-                    }
-                    .desarrollo-web {
-                        display: flex; flex-direction: column; align-items: center; justify-content: center;
-                        border-left: solid 1px white;
-                        grid-area: desarrollador;
-                        margin-left: 1vh;
-                        padding-left: 2vh;
-                    }
+        .contenedor-divisor-resume {
+            display: flex; justify-content: center; align-items: center;
+            height: 90vh; width: 90%;
+            /* border: solid 1px white; */ /* comentar al final */
+            border-radius: 2vh;
+            /* background-image: url(../img/backgroundOPC/black20.png); */
+            background-image: url(../img/backgroundOPC/white20.png);
+            /* background-image: url(../img/interior2.png); background-size: cover; */
+            .contenido-resume {
+                display: flex; flex-direction: column; align-items: center;
+                height: 100%; width: 100%;
+                /* background-color: white; */
+                font-size: 1.5vh;
+                .edu-exp {
+                    margin-bottom: 3vh;
+                    padding: 2.5vh 1.5vh;
+                    height: 100%; width: 95%;
+                    background-image: url(../img/backgroundOPC/white30.png);
+                    border: solid 1px white; border-radius: 2vh;
+                    display: grid; gap: 1.5vh;
+                    grid-template: repeat(1, 1fr)/ repeat(3, 1fr);
+                    grid-template-areas: 
+                        "tecnico operador desarrollador"
+                    ;
+                    text-align: center;
+                }
+                .titulo-exp {
+                    margin-bottom: 1vh;
+                    color: darkgoldenrod;
+                    background-image: url(../img/backgroundOPC/white40.png);
+                }
+                .seccion-exp {
+                    background-image: url(../img/backgroundOPC/black10.png);
+                }
+                .descripcion-exp {
+                    margin-left: 1.5vh;
+                }
+                .descripcion {
+                    background-color: white;
+                }
+                .tecnico-electricista {
+                    display: flex; flex-direction: column; align-items: center; justify-content: center;
+                    border-left: solid 1px white;
+                    margin-left: 1vh;
+                    padding-left: 2vh;
+                    grid-area: tecnico;
+                }
+                .operador {
+                    display: flex; flex-direction: column; align-items: center; justify-content: center;
+                    border-left: solid 1px white;
+                    grid-area: operador;
+                    margin-left: 1vh;
+                    padding-left: 2vh;
+                }
+                .desarrollo-web {
+                    display: flex; flex-direction: column; align-items: center; justify-content: center;
+                    border-left: solid 1px white;
+                    grid-area: desarrollador;
+                    margin-left: 1vh;
+                    padding-left: 2vh;
                 }
             }
         }
     }
+}
+.resume-bg{
+    background-image: url(../img/cielo2large.jpg);
 }

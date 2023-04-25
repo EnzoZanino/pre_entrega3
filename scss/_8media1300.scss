@@ -1,10 +1,10 @@
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
     .contenedor-general {
         display: flex;
         flex-direction: column;
-        height: 100vh; width: 100%;
+        height: auto; width: 100%;
         .contenedor-1 {
-            height: 12%; width: 100%;
+            height: 12vh; width: 100%;
             margin-top: 2.5vh;
             margin-bottom: 4vh;
             display: flex; justify-content: center; align-items: center;
@@ -446,186 +446,188 @@
                 }
             }
         }
-        .linea-vertical {
+        .linea-intermedia {
             margin-top: 2.5vh;
-            height: 1px; width: 80%;
+            height: 0.1px; width: 80%;
+            border: none;
             border-top: solid 1px white;
         }
         .contenedor-2 {
-            height: 100%; width: 100%;
+            height: 79vh; width: 100%;
             display: flex; justify-content: center; align-items: center;
-            .contenedor-borde {
-                display: flex; flex-direction: column; align-items: center; justify-content: center;
-                height: 100%; width: 100%;
-                border: none;
-                /* border-top: solid 1.5px white; */
-                
-                /* .contenedor-divisor-index {
-                    height: 100%;
-                } */
-                .contenedor-divisor {
-                    height: 70vh;
-                    .contenedor-texto-about{
-                        display: flex; flex-direction: column; justify-content: center;
+            .contenedor-divisor {
+                height: 95%;
+                .contenedor-texto-about{
+                    width: 95%; height: 95%;
+                    display: flex; flex-direction: column; justify-content: center;
+                    /* background-color: yellow; */
+                    text-align: center;
+                    p {
+                        font-size: 1.8vh;
+                        margin-top: 0.5vh;
+                        padding: 0.5vh 1vh;
+                        mark {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .contenedor-divisor-index {
+                flex-direction: column; align-items: center;
+                height: 90%;
+            }
+            .contenedor-divisor-portfolio {
+                display: flex; justify-content: center;
+                height: 70vh; width: 80%;
+                padding-top: 1vh;
+                /* border: solid 1px white; */ /* comentar al final */
+                border-radius: 2vh;
+                /* background-image: url(../img/backgroundOPC/black20.png); */
+                background-image: url(../img/backgroundOPC/white20.png);
+                /* background-image: url(../img/interior2.png); background-size: cover; */
+                .contenido-portfolio {
+                    height: 95%; width: 90%;
+                    display: flex; flex-direction: column; align-items: center;
+                    /* background-image: url(../img/backgroundOPC/black20.png);  */border-radius: 2vh;
+                    .grid-contenido {
                         text-align: center;
-                        text-align: justify;
-                        p {
-                            font-size: 2vh;
-                            padding: 3vh 3vh;
-                            mark {
-                                width: 100%;
+                        height: 90%; width: 90%;
+                        margin: 1vh; gap: 2vh;
+                        display: grid;
+                        grid-template: repeat(7, 6.6vh) / 1fr;
+                        /* grid-template-areas:
+                            "proyecto1 proyecto3 agregar2 agregar2"
+                            "proyecto1 agregar4 agregar4 agregar1"
+                            "proyecto2 agregar4 agregar4 agregar11"
+                        ; */
+                        div {
+                            background-image: url(../img/backgroundOPC/black40.png);
+                            border-radius: 2vh;
+                            display: flex; justify-content: center; align-items: center;
+                            a {
+                                text-decoration: none;
+                                border: solid 1px white; border-radius: 0.5vh;
                             }
+                        }
+                        .proyecto1 {
+                            background-image: url(../img/img_portfolio/proyecto1.jpg); background-size: cover;
+                            grid-area: proyecto1;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 2;
+                        }
+                        .proyecto2 {
+                            background-image: url(../img/img_portfolio/proyecto2.jpg); background-size: cover;
+                            grid-area: proyecto2;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 3;
+                        }
+                        .proyecto3 {
+                            background-image: url(../img/img_portfolio/proyecto3.jpg); background-size: cover;
+                            grid-area: proyecto3;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 4;
+                        }
+                        .agregar4 {
+                            grid-area: agregar4;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 5;
+                        }
+                        .agregar2 {
+                            grid-area: agregar2;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 6;
+                        }
+                        .agregar1 {
+                            grid-area: agregar1;
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 7;
+                        }
+                        .agregar11 {
+                            grid-column-start: span 1;
+                            grid-column-end: 2;
+                            grid-row-start: span 1;
+                            grid-row-end: 8;
+                        }
+                        .entrega {
+                            font-size: 2.5vh;
+                            color: white;
+                        }
+                        .mas {
+                            font-size: 10vh;
+                            color: white;
                         }
                     }
                 }
-                .contenedor-divisor-resume {
-                    display: flex; justify-content: center; align-items: center;
-                    height: 95%; width: 95%;
-                    margin-bottom: 2vh;
-                    border-radius: 2vh;
-                    background-image: url(../img/backgroundOPC/white20.png);
-                    .contenido-resume {
-                        display: flex; flex-direction: column; align-items: center;
-                        height: 100%; width: 100%;
-                        /* background-color: white; */
-                        font-size: 1.5vh;
-                        .edu-exp {
-                            display: flex; flex-direction: column; justify-content: space-evenly;
-                            margin-bottom: 3vh;
-                            padding: 2.5vh 1.5vh;
-                            height: 100%; width: 95%;
-                            background-image: url(../img/backgroundOPC/white30.png);
-                            border: solid 1px white; border-radius: 2vh;
-                            text-align: center;
-                        }
-                        .titulo-exp {
-                            margin-bottom: 1vh;
-                            color: darkgoldenrod;
-                            background-image: url(../img/backgroundOPC/white40.png);
-                        }
-                        .seccion-exp {
-                            background-image: url(../img/backgroundOPC/black10.png);
-                        }
-                        .descripcion-exp {
-                            margin-left: 1.5vh;
-                        }
-                        .descripcion {
-                            background-color: white;
-                        }
-                        .tecnico-electricista {
-                            display: flex; flex-direction: column; align-items: center; justify-content: center;
-                            border: none; border-bottom: solid 1px white;
-                            margin: 0;
-                            padding: 0; padding-bottom: 2vh;
-                        }
-                        .operador {
-                            display: flex; flex-direction: column; align-items: center; justify-content: center;
-                            border: none; border-bottom: solid 1px white;
-                            margin: 0;
-                            padding: 0; padding-bottom: 2vh;
-                        }
-                        .desarrollo-web {
-                            display: flex; flex-direction: column; align-items: center; justify-content: center;
-                            border: none; border-bottom: solid 1px white;
-                            margin: 0;
-                            padding: 0; padding-bottom: 2vh;
-                        }
+            }
+        }
+        .contenedor2-resume {
+            height: 180vh;
+            .contenedor-divisor-resume {
+                display: flex; justify-content: center; align-items: center;
+                height: 95%; width: 95%;
+                margin-bottom: 2vh;
+                border-radius: 2vh;
+                background-image: url(../img/backgroundOPC/white20.png);
+                .contenido-resume {
+                    display: flex; flex-direction: column; align-items: center;
+                    height: 100%; width: 100%;
+                    /* background-color: white; */
+                    font-size: 1.5vh;
+                    .edu-exp {
+                        display: flex; flex-direction: column; justify-content: space-evenly;
+                        margin-bottom: 3vh;
+                        padding: 2.5vh 1.5vh;
+                        height: 100%; width: 95%;
+                        background-image: url(../img/backgroundOPC/white30.png);
+                        border: solid 1px white; border-radius: 2vh;
+                        text-align: center;
                     }
-                }
-                .contenedor-divisor-portfolio {
-                    display: flex; justify-content: center;
-                    height: 70vh; width: 80%;
-                    padding-top: 1vh;
-                    /* border: solid 1px white; */ /* comentar al final */
-                    border-radius: 2vh;
-                    /* background-image: url(../img/backgroundOPC/black20.png); */
-                    background-image: url(../img/backgroundOPC/white20.png);
-                    /* background-image: url(../img/interior2.png); background-size: cover; */
-                    .contenido-portfolio {
-                        height: 95%; width: 90%;
-                        display: flex; flex-direction: column; align-items: center;
-                        /* background-image: url(../img/backgroundOPC/black20.png);  */border-radius: 2vh;
-                        .grid-contenido {
-                            text-align: center;
-                            height: 90%; width: 90%;
-                            margin: 1vh; gap: 2vh;
-                            display: grid;
-                            grid-template: repeat(3, 18vh)/ repeat(4, 1fr);
-                            /* grid-template-areas:
-                                "proyecto1 proyecto3 agregar2 agregar2"
-                                "proyecto1 agregar4 agregar4 agregar1"
-                                "proyecto2 agregar4 agregar4 agregar11"
-                            ; */
-                            div {
-                                background-image: url(../img/backgroundOPC/black40.png);
-                                border-radius: 2vh;
-                                display: flex; justify-content: center; align-items: center;
-                                a {
-                                    text-decoration: none;
-                                    border: solid 1px white; border-radius: 0.5vh;
-                                }
-                            }
-                            .proyecto1 {
-                                background-image: url(../img/img_portfolio/proyecto1.jpg); background-size: cover;
-                                grid-area: proyecto1;
-                                grid-column-start: span 1;
-                                grid-column-end: 2;
-                                grid-row-start: span 2;
-                                grid-row-end: 3;
-                            }
-                            .proyecto2 {
-                                background-image: url(../img/img_portfolio/proyecto2.jpg); background-size: cover;
-                                grid-area: proyecto2;
-                                grid-column-start: span 1;
-                                grid-column-end: 2;
-                                grid-row-start: span 1;
-                                grid-row-end: 4;
-                            }
-                            .proyecto3 {
-                                background-image: url(../img/img_portfolio/proyecto3.jpg); background-size: cover;
-                                grid-area: proyecto3;
-                                grid-column-start: span 1;
-                                grid-column-end: 3;
-                                grid-row-start: span 1;
-                                grid-row-end: 2;
-                            }
-                            .agregar4 {
-                                grid-area: agregar4;
-                                grid-column-start: span 2;
-                                grid-column-end: 4;
-                                grid-row-start: span 2;
-                                grid-row-end: 4;
-                            }
-                            .agregar2 {
-                                grid-area: agregar2;
-                                grid-column-start: span 2;
-                                grid-column-end: 5;
-                                grid-row-start: span 1;
-                                grid-row-end: 2;
-                            }
-                            .agregar1 {
-                                grid-area: agregar1;
-                                grid-column-start: span 1;
-                                grid-column-end: 5;
-                                grid-row-start: span 1;
-                                grid-row-end: 3;
-                            }
-                            .agregar11 {
-                                grid-area: agregar1;
-                                grid-column-start: span 1;
-                                grid-column-end: 5;
-                                grid-row-start: span 1;
-                                grid-row-end: 4;
-                            }
-                            .entrega {
-                                font-size: 2.5vh;
-                                color: white;
-                            }
-                            .mas {
-                                font-size: 10vh;
-                                color: white;
-                            }
-                        }
+                    .titulo-exp {
+                        margin-bottom: 1vh;
+                        color: darkgoldenrod;
+                        background-image: url(../img/backgroundOPC/white40.png);
+                    }
+                    .seccion-exp {
+                        background-image: url(../img/backgroundOPC/black10.png);
+                    }
+                    .descripcion-exp {
+                        margin-left: 1.5vh;
+                    }
+                    .descripcion {
+                        background-color: white;
+                    }
+                    .tecnico-electricista {
+                        display: flex; flex-direction: column; align-items: center; justify-content: center;
+                        border: none; border-bottom: solid 1px white;
+                        margin: 0;
+                        padding: 0; padding-bottom: 2vh;
+                        grid-area: tecnico;
+                    }
+                    .operador {
+                        display: flex; flex-direction: column; align-items: center; justify-content: center;
+                        border: none; border-bottom: solid 1px white;
+                        grid-area: operador;
+                        margin: 0;
+                        padding: 0; padding-bottom: 2vh;
+                    }
+                    .desarrollo-web {
+                        display: flex; flex-direction: column; align-items: center; justify-content: center;
+                        border: none; border-bottom: solid 1px white;
+                        grid-area: desarrollador;
+                        margin: 0;
+                        padding: 0; padding-bottom: 2vh;
                     }
                 }
             }

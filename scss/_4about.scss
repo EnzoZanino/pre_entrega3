@@ -1,10 +1,4 @@
 .contenedor-general {
-    height: 100vh; width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/cielo2.jpg);
-    background-size: cover;
     .contenedor-1 {
         .barra-menu {
             .iconos {
@@ -98,34 +92,29 @@
         }
     }
     .contenedor-2{
-        .contenedor-borde {
-            .contenedor-divisor {
-                display: flex; justify-content: center; align-items: center;
-                height: 60vh; width: 80%;
-                /* border: solid 1px white; */ /* comentar al final */
-                border-radius: 2vh;
-                /* background-image: url(../img/backgroundOPC/black20.png); */
-                background-image: url(../img/backgroundOPC/white20.png);
-                /* background-image: url(../img/interior2.png); background-size: cover; */
-                .contenedor-texto-about {
-                    display: flex; flex-direction: column; justify-content: center; align-items: center;
-                    width: 90%;
-                    text-align: center; font-family: 'Signika', sans-serif; color: rgb(92, 82, 86);
-                    /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
-                    h1 {
-                        font-size: 6.1vh;
-                    }
-                    p {
-                        font-size: 2vh;
-                        padding: 4vh 8vh;
-                        /*  border-radius: 2vh; */
-                        border: solid 1px white; border-radius: 2vh; background-image: url(../img/backgroundOPC/white40.png);
-                        mark {
-                            color: rgb(92, 82, 86);
-                            /* background-image: url(../img/backgroundOPC/black20.png); */
-                            background-color: white;
-                            /* border-radius: 0.1vh; */
-                        }
+        .contenedor-divisor {
+            display: flex; justify-content: center; align-items: center;
+            height: 60vh; width: 80%;
+            /* border: solid 1px white; */ /* comentar al final */
+            border-radius: 2vh;
+            /* background-image: url(../img/backgroundOPC/black20.png); */
+            background-image: url(../img/backgroundOPC/white20.png);
+            /* background-image: url(../img/interior2.png); background-size: cover; */
+            .contenedor-texto-about {
+                display: flex; flex-direction: column; justify-content: center; align-items: center;
+                width: 90%;
+                text-align: center; font-family: 'Signika', sans-serif; color: rgb(92, 82, 86);
+                /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
+                p {
+                    font-size: 2vh;
+                    padding: 4vh 8vh;
+                    /*  border-radius: 2vh; */
+                    border: solid 1px white; border-radius: 2vh; background-image: url(../img/backgroundOPC/white40.png);
+                    mark {
+                        color: rgb(92, 82, 86);
+                        /* background-image: url(../img/backgroundOPC/black20.png); */
+                        background-color: white;
+                        /* border-radius: 0.1vh; */
                     }
                 }
             }
