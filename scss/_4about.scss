@@ -2,90 +2,39 @@
     .contenedor-1 {
         .barra-menu {
             .iconos {
-                a { text-decoration: none; }
-
-                height: 95%;
-                width: 100%;
-                display: flex; flex-direction: column; justify-content: space-around; align-items: center;
-                filter: opacity(90%);
-
                 .seccion-home{
-                    display: flex;
-                    align-items: center;
-                    height: 5vh; width: 18vh;
-                    transition: 1s;
-                    margin-left: 13vh;
+                    @extend .seccion-out;
                     .icon-home {
-                        background-color: white;
-                        height: 5vh; width: 5vh;
+                        @extend .icon-out;
                         background-image: url(../img/logo-home.png);
-                        background-size: cover;
-                        border-radius: 8px;
-                        box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5);
-                        transition: 1s;
                         &:hover {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .icon-hover;
                             background-image: url(../img/logo-home2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
                         }
                     }
                     .name-home {
-                        display: flex; align-items: center; justify-content: center;
-                        z-index: -1;
-                        position: relative;
-                        right: 6.5vh;
-                        color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
-                        border-radius: 1vh;
-                        height: 1.25vh; width: 4vh;
-                        margin-left: 2vh;
-                        background-color: white;
-                        transition: 0.5s;
+                        @extend .name-out;
                     }
                     &:hover {
                         height: 8vh;
-                        .name-home {
-                            transform: translateX(6.5vh);
-                            height: 2.5vh; width: 8vh;
-                            font-size: 1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
-                        }
                         .icon-home {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
                             background-image: url(../img/logo-home2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
+                            @extend .icon-hover-out;
+                        }
+                        .name-home {
+                            @extend .name-hover-out;
                         }
                     }
                 }
 
                 .seccion-about-in {
-                    display: flex;
-                    align-items: center;
-                    height: 8vh; width: 18vh;
-                    margin-left: 10vh;
+                    @extend .seccion-in;
                     .icon-about-in {
+                        @extend .icon-in;
                         background-image: url(../img/logo-about2v2.png);
-                        background-color: white;
-                        background-size: cover;
-                        height: 8vh; width: 8vh;
-                        border-radius: 1vh;
-                        filter: opacity(100%);
-                        box-shadow: 0px 0px 23px 5px white;
                     }
                     .name-about-in {
-                        display: flex; align-items: center; justify-content: center;
-                        background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
-                        height: 2.5vh; width: 8vh; margin-left: 2vh;
-                        color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
-                        vertical-align: middle;
-                        transition: 0.5s;
+                        @extend .name-in;
                     }
                 }
             }
@@ -93,28 +42,23 @@
     }
     .contenedor-2{
         .contenedor-divisor {
-            display: flex; justify-content: center; align-items: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
             height: 60vh; width: 80%;
-            /* border: solid 1px white; */ /* comentar al final */
             border-radius: 2vh;
-            /* background-image: url(../img/backgroundOPC/black20.png); */
             background-image: url(../img/backgroundOPC/white20.png);
-            /* background-image: url(../img/interior2.png); background-size: cover; */
             .contenedor-texto-about {
                 display: flex; flex-direction: column; justify-content: center; align-items: center;
                 width: 90%;
                 text-align: center; font-family: 'Signika', sans-serif; color: rgb(92, 82, 86);
-                /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
                 p {
                     font-size: 2vh;
                     padding: 4vh 8vh;
-                    /*  border-radius: 2vh; */
                     border: solid 1px white; border-radius: 2vh; background-image: url(../img/backgroundOPC/white40.png);
                     mark {
                         color: rgb(92, 82, 86);
-                        /* background-image: url(../img/backgroundOPC/black20.png); */
                         background-color: white;
-                        /* border-radius: 0.1vh; */
                     }
                 }
             }

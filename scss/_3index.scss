@@ -1,13 +1,14 @@
 .contenedor-general {
     height: 100vh; width: 100%;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     background-image: url(../img/cielo2large.jpg);
     background-size: cover;
     .contenedor-1 {
         height: 100vh; width: 18%;
         display: flex; justify-content: start; align-items: center;
+        color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
         .barra-menu {
             margin-left: 30%;
             height: 50vh; width: 2.75vh;
@@ -22,263 +23,112 @@
             }
             .iconos {
                 a { text-decoration: none; }
-
                 height: 95%;
                 width: 100%;
                 display: flex; flex-direction: column; justify-content: space-around; align-items: center;
-
                 .seccion-home-in {
-                    display: flex;
-                    align-items: center;
-                    height: 8vh; width: 18vh;
-                    margin-left: 10vh;
+                    @extend .seccion-in;
                     .icon-home-in {
+                        @extend .icon-in;
                         background-image: url(../img/logo-home2.png);
-                        background-color: white;
-                        background-size: cover;
-                        height: 8vh; width: 8vh;
-                        border-radius: 1vh;
-                        filter: opacity(100%);
-                        box-shadow: 0px 0px 23px 5px white;
                     }
                     .name-home-in {
-                        display: flex; align-items: center; justify-content: center;
-                        background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
-                        height: 2.5vh; width: 8vh; margin-left: 2vh;
-                        color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
-                        vertical-align: middle;
-                        transition: 0.5s;
+                        @extend .name-in;
                     }
                 }
-
                 .seccion-about {
-                    display: flex;
-                    align-items: center;
-                    height: 5vh; width: 18vh;
-                    transition: 1s;
-                    margin-left: 13vh;
+                    @extend .seccion-out;
                     .icon-about {
-                        background-color: white;
-                        height: 5vh; width: 5vh;
+                        @extend .icon-out;
                         background-image: url(../img/logo-about.png);
-                        background-size: cover;
-                        border-radius: 8px;
-                        box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5);
-                        transition: 1s;
                         &:hover {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .icon-hover;
                             background-image: url(../img/logo-about2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
                         }
                     }
                     .name-about {
-                        display: flex; align-items: center; justify-content: center;
-                        z-index: -1;
-                        position: relative;
-                        right: 6.5vh;
-                        /* right: 8.5vh; */
-                        /* right: 1vh; */
-                        color: black;font-size: 0.75vh; font-family: 'Signika', sans-serif;
-                        border-radius: 1vh;
-                        height: 1.25vh; width: 4vh;
-                        /* height: 2.5vh; width: 8vh; */
-                        /* font-size: 16px; */
-                        margin-left: 2vh;
-                        background-color: white;
-                        transition: 0.5s;
+                        @extend .name-out;
                     }
                     &:hover {
                         height: 8vh;
                         .icon-about {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
                             background-image: url(../img/logo-about2v2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
+                            @extend .icon-hover-out;
                         }
                         .name-about {
-                            transform: translateX(6.5vh);
-                            height: 2.5vh; width: 8vh;
-                            font-size: 1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .name-hover-out;
                         }
-                        /* .icon-home {
-                            height: 5vh; width: 5vh;
-                            background-image: url(../img/logo-home.png);
-                        } */
                     }
                 }
-
                 .seccion-resume {
-                    display: flex;
-                    align-items: center;
-                    height: 5vh; width: 18vh;
-                    transition: 1s;
-                    margin-left: 13vh;
+                    @extend .seccion-out;
                     .icon-resume {
-                        background-color: white;
-                        height: 5vh; width: 5vh;
+                        @extend .icon-out;
                         background-image: url(../img/logo-resume.png);
-                        background-size: cover;
-                        border-radius: 8px;
-                        box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5);
-                        transition: 1s;
                         &:hover {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .icon-hover;
                             background-image: url(../img/logo-resume2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
                         }
                     }
                     .name-resume {
-                        display: flex; align-items: center; justify-content: center;
-                        z-index: -1;
-                        position: relative;
-                        right: 6.5vh;
-                        color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
-                        border-radius: 1vh;
-                        height: 1.25vh; width: 4vh;
-                        margin-left: 2vh;
-                        background-color: white;
-                        transition: 0.5s;
+                        @extend .name-out;
                     }
                     &:hover {
                         height: 8vh;
-                        .name-resume {
-                            transform: translateX(6.5vh);
-                            height: 2.5vh; width: 8vh;
-                            font-size: 1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
-                        }
                         .icon-resume {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
                             background-image: url(../img/logo-resume2v2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
+                            @extend .icon-hover-out;
+                        }
+                        .name-resume {
+                            @extend .name-hover-out;
                         }
                     }
                 }
-
                 .seccion-portfolio {
-                    display: flex;
-                    align-items: center;
-                    height: 5vh; width: 18vh;
-                    transition: 1s;
-                    margin-left: 13vh;
+                    @extend .seccion-out;
                     .icon-portfolio {
-                        background-color: white;
-                        height: 5vh; width: 5vh;
+                        @extend .icon-out;
                         background-image: url(../img/logo-portfolio.png);
-                        background-size: cover;
-                        border-radius: 8px;
-                        box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5);
-                        transition: 1s;
                         &:hover {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .icon-hover;
                             background-image: url(../img/logo-portfolio2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
                         }
                     }
                     .name-portfolio {
-                        display: flex; align-items: center; justify-content: center;
-                        height: 1.25vh; width: 4vh;
-                        z-index: -1;
-                        position: relative;
-                        right: 6.5vh;
-                        color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
-                        border-radius: 1vh;
-                        margin-left: 2vh;
-                        background-color: white;
-                        transition: 0.5s;
+                        @extend .name-out;
                     }
                     &:hover {
                         height: 8vh;
-                        .name-portfolio {
-                            transform: translateX(6.5vh);
-                            height: 2.5vh; width: 10vh;
-                            font-size: 1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
-                        }
                         .icon-portfolio {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
                             background-image: url(../img/logo-portfolio2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
+                            @extend .icon-hover-out;
+                        }
+                        .name-portfolio {
+                            @extend .name-hover-out;
                         }
                     }
                 }
-
                 .seccion-contact {
-                    display: flex;
-                    align-items: center;
-                    height: 5vh; width: 18vh;
-                    transition: 1s;
-                    margin-left: 13vh;
+                    @extend .seccion-out;
                     .icon-contact {
-                        background-color: white;
-                        height: 5vh; width: 5vh;
+                        @extend .icon-out;
                         background-image: url(../img/logo-contacto.png);
-                        background-size: cover;
-                        border-radius: 8px;
-                        box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.5);
-                        transition: 1s;
                         &:hover {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
+                            @extend .icon-hover;
                             background-image: url(../img/logo-contacto2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
                         }
                     }
                     .name-contact {
-                        display: flex; align-items: center; justify-content: center;
-                        z-index: -1;
-                        position: relative;
-                        right: 6.5vh;
-                        color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
-                        border-radius: 1vh;
-                        height: 1.25vh; width: 4vh;
-                        margin-left: 2vh;
-                        background-color: white;
-                        transition: 0.5s;
+                        @extend .name-out;
                     }
                     &:hover {
                         height: 8vh;
-                        .name-contact {
-                            transform: translateX(6.5vh);
-                            height: 2.5vh; width: 8vh;
-                            font-size: 1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
-                        }
                         .icon-contact {
-                            margin-left: -1.5vh;
-                            box-shadow: 0px 0px 23px 5px white;
                             background-image: url(../img/logo-contacto2.png);
-                            background-size: cover;
-                            height: 8vh; width: 8vh;
-                            border-radius: 12px;
-                            filter: opacity(100%);
+                            @extend .icon-hover-out;
+                        }
+                        .name-contact {
+                            @extend .name-hover-out;
                         }
                     }
                 }
@@ -289,68 +139,56 @@
         height: 80vh; width: 0.1px;
         border-left: solid 1.5px white;
     }
+
     .contenedor-2 {
         height: 100vh; width: 82%;
         display: flex; justify-content: center; align-items: center;
+        margin-top: 2vh;
         .contenedor-divisor-index {
-            /* padding: 10vh; */
             display: flex; justify-content: space-evenly;
             height: 60vh; width: 80%;
-            /* border: solid 1px white; */ /* comentar al final */
             border-radius: 2vh;
-            /* background-image: url(../img/backgroundOPC/black20.png); */
             background-image: url(../img/backgroundOPC/white20.png);
-            /* background-image: url(../img/interior2.png); background-size: cover; */
             .content-left {
                 display: flex; flex-direction: column; justify-content: center;
                 font-family: 'Signika', sans-serif;
-                /* background-color: crimson; */ border-radius: 2vh;
+                border-radius: 2vh;
                 .social-links {
                     display: flex; justify-content: space-around;
                     height: 3vh; width: 32.5vh;
                     margin-top: 2vh;
                     filter: opacity(60%);
                     .icon-facebook {
-                        height: 3vh; width: 3vh;
-                        border-radius: 0.5vh;
-                        background-image: url(../img/logo-facebook.png); background-size: cover;
-                        transition: 0.5s;
+                        background-image: url(../img/logo-facebook.png);
+                        @extend .icon-socials;
                         &:hover {
                             background-image: url(../img/logo-facebook2.png);
                         }
                     }
                     .icon-instagram {
-                        height: 3vh; width: 3vh;
-                        border-radius: 0.5vh;
-                        background-image: url(../img/logo-instagram.png); background-size: cover;
-                        transition: 0.5s;
+                        background-image: url(../img/logo-instagram.png);
+                        @extend .icon-socials;
                         &:hover {
                             background-image: url(../img/logo-instagram2.png);
                         }
                     }
                     .icon-twitter {
-                        height: 3vh; width: 3vh;
-                        border-radius: 0.5vh;
-                        background-image: url(../img/logo-twitter.png); background-size: cover;
-                        transition: 0.5s;
+                        background-image: url(../img/logo-twitter.png);
+                        @extend .icon-socials;
                         &:hover {
                             background-image: url(../img/logo-twitter2.png);
                         }
                     }
                     .icon-github {
-                        height: 3vh; width: 3vh;
-                        border-radius: 0.5vh;
-                        background-image: url(../img/logo-github.png); background-size: cover;
-                        transition: 0.5s;
+                        background-image: url(../img/logo-github.png);
+                        @extend .icon-socials;
                         &:hover {
                             background-image: url(../img/logo-github2.png);
                         }
                     }
                     .icon-linkedin {
-                        height: 3vh; width: 3vh;
-                        border-radius: 0.5vh;
-                        background-image: url(../img/logo-linkedin.png); background-size: cover;
-                        transition: 0.5s;
+                        background-image: url(../img/logo-linkedin.png);
+                        @extend .icon-socials;
                         &:hover {
                             background-image: url(../img/logo-linkedin2.png);
                         }
@@ -362,7 +200,9 @@
                 filter: opacity(80%);
                 /* background-image: url(../img/perfil.png); background-size: cover; filter: opacity(60%); */
                 .circle-perfil-e {
-                    display: flex; justify-content: center; align-items: center;
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center;
                     height: 35vh; width: 35vh;
                     background-image: url(../img/backgroundOPC/white20.png);
                     border-radius: 30vh;
@@ -371,6 +211,55 @@
                         background-color: lightslategray;
                         background-image: url(../img/enzoo.jpg); background-size: cover;
                         border-radius: 40vh;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer {
+        position: absolute; left: 0; bottom: 0;
+        height: 20vh; width: 100%;
+        .ribbon {
+            position: fixed; left: -6.5vh; /* top: 13vh; */ bottom: 2vh;
+            cursor: pointer;
+            width: 19vh; height: 5vh;
+            z-index: 4;
+            display: flex; justify-content: end;
+            transition: 2.5s;
+            background-image: url(../img/ribbon-left.png); background-size: cover;
+            transition: 1s;
+            &:hover {
+                transform: translateX(3.25vh);
+            }
+            .txt-footer {
+                position: relative; right: 3vh;
+                display: flex; align-items: center;
+                font-size: 2vh;
+                height: 5vh; width: 7vh;
+                text-align: center;
+            }
+            .footer-active {
+                display: none;
+            }
+        }
+        input {
+            display: none;
+            &:checked + {
+                .ribbon {
+                    left: 0vh; bottom: 0;
+                    background-image: url(../img/barra-h.jpg);
+                    height: 10vh; width: 100%;
+                    transition: 0.5s;
+                    display: flex; justify-content: center; align-items: center;
+                    &:hover {
+                        transform: translateX(0vh);
+                    }
+                    .txt-footer {
+                        display: none;
+                    }
+                    .footer-active {
+                        display: block;
                     }
                 }
             }

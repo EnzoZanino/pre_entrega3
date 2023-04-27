@@ -7,7 +7,9 @@
             height: 12vh; width: 100%;
             margin-top: 2.5vh;
             margin-bottom: 4vh;
-            display: flex; justify-content: center; align-items: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
             .barra-menu {
                 margin-left: 0;
                 height: 2.75vh; width: 50vh;
@@ -55,7 +57,9 @@
                             }
                         }
                         .name-home {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             z-index: -1;
                             position: relative; right: 1vh; bottom: 2.5vh;
                             color: black;font-size: 0.75vh; font-family: 'Signika', sans-serif;
@@ -112,7 +116,9 @@
                             }
                         }
                         .name-about {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             z-index: -1;
                             position: relative; right: 1vh; bottom: 2.5vh;
                             color: black;font-size: 0.75vh; font-family: 'Signika', sans-serif;
@@ -141,10 +147,6 @@
                                 font-size: 1.5vh;
                                 box-shadow: 0px 0px 23px 5px white;
                             }
-                            /* .icon-home {
-                                height: 5vh; width: 5vh;
-                                background-image: url(../img/logo-home.png);
-                            } */
                         }
                     }
     
@@ -174,7 +176,9 @@
                             }
                         }
                         .name-resume {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             z-index: -1;
                             position: relative; right: 1vh; bottom: 2.5vh;
                             color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
@@ -232,7 +236,9 @@
                             }
                         }
                         .name-portfolio {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             height: 1.25vh; width: 4vh;
                             z-index: -1;
                             position: relative; right: 1vh; bottom: 2.5vh;
@@ -290,7 +296,9 @@
                             }
                         }
                         .name-contact {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             z-index: -1;
                             position: relative; right: 1vh; bottom: 2.5vh;
                             color: black; font-size: 0.75vh; font-family: 'Signika', sans-serif;
@@ -342,7 +350,9 @@
                             box-shadow: 0px 0px 23px 5px white;
                         }
                         .name-home-in {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
                             height: 2.5vh; width: 8vh; margin-top: 2vh; margin-left: 0;
                             color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
@@ -365,7 +375,9 @@
                             box-shadow: 0px 0px 23px 5px white;
                         }
                         .name-about-in {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
                             height: 2.5vh; width: 8vh; margin-top: 2vh; margin-left: 0;
                             color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
@@ -388,7 +400,9 @@
                             box-shadow: 0px 0px 23px 5px white;
                         }
                         .name-resume-in {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
                             height: 2.5vh; width: 8vh; margin-top: 2vh; margin-left: 0;
                             color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
@@ -396,8 +410,7 @@
                         }
                     }
                     .seccion-portfolio-in {
-                        display: flex; flex-direction: column;
-                        justify-content: center;
+                        display: flex; flex-direction: column; justify-content: center;
                         height: 12.5vh; width: 8vh;
                         margin-top: 4vh;
                         margin-left: 0;
@@ -411,7 +424,9 @@
                             box-shadow: 0px 0px 23px 5px white;
                         }
                         .name-portfolio-in {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
                             height: 2.5vh; width: 8vh; margin-top: 2vh; margin-left: 0;
                             color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
@@ -434,7 +449,9 @@
                             box-shadow: 0px 0px 23px 5px white;
                         }
                         .name-contact-in {
-                            display: flex; align-items: center; justify-content: center;
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center;
                             background-color: white; box-shadow: 0px 0px 23px 5px white; border-radius: 1vh;
                             height: 2.5vh; width: 8vh; margin-top: 2vh; margin-left: 0;
                             color: black; font-size: 1.5vh; font-family: 'Signika', sans-serif;
@@ -454,7 +471,9 @@
         }
         .contenedor-2 {
             height: 79vh; width: 100%;
-            display: flex; justify-content: center; align-items: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
             .contenedor-divisor {
                 height: 95%;
                 .contenedor-texto-about{
@@ -480,15 +499,12 @@
                 display: flex; justify-content: center;
                 height: 70vh; width: 80%;
                 padding-top: 1vh;
-                /* border: solid 1px white; */ /* comentar al final */
                 border-radius: 2vh;
-                /* background-image: url(../img/backgroundOPC/black20.png); */
                 background-image: url(../img/backgroundOPC/white20.png);
-                /* background-image: url(../img/interior2.png); background-size: cover; */
                 .contenido-portfolio {
                     height: 95%; width: 90%;
                     display: flex; flex-direction: column; align-items: center;
-                    /* background-image: url(../img/backgroundOPC/black20.png);  */border-radius: 2vh;
+                    border-radius: 2vh;
                     .grid-contenido {
                         text-align: center;
                         height: 90%; width: 90%;
@@ -575,7 +591,9 @@
         .contenedor2-resume {
             height: 180vh;
             .contenedor-divisor-resume {
-                display: flex; justify-content: center; align-items: center;
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
                 height: 95%; width: 95%;
                 margin-bottom: 2vh;
                 border-radius: 2vh;
@@ -583,7 +601,6 @@
                 .contenido-resume {
                     display: flex; flex-direction: column; align-items: center;
                     height: 100%; width: 100%;
-                    /* background-color: white; */
                     font-size: 1.5vh;
                     .edu-exp {
                         display: flex; flex-direction: column; justify-content: space-evenly;

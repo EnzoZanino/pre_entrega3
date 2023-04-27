@@ -16,6 +16,112 @@ h2 {
   font-size: 2vh;
 }
 
+/* @Extend */
+.seccion-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width: 18vh;
+  margin-left: 10vh;
+}
+
+.icon-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .icon-contact-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .icon-portfolio-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .icon-resume-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .icon-about-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .icon-home-in {
+  background-color: white;
+  background-size: cover;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 1vh;
+  filter: opacity(100%);
+  box-shadow: 0px 0px 23px 5px white;
+}
+
+.name-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .name-contact-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .name-portfolio-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .name-resume-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .name-about-in, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .name-home-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 23px 5px white;
+  border-radius: 1vh;
+  height: 2.5vh;
+  width: 8vh;
+  margin-left: 2vh;
+  transition: 0.5s;
+}
+
+.seccion-out, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  width: 18vh;
+  transition: 1s;
+  margin-left: 13vh;
+}
+
+.icon-out, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about {
+  background-color: white;
+  height: 5vh;
+  width: 5vh;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0px 12px 18px -6px black;
+  transition: 1s;
+}
+
+.icon-hover, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home:hover, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact:hover, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio:hover, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume:hover, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about:hover {
+  margin-left: -1.5vh;
+  box-shadow: 0px 0px 23px 5px white;
+  background-size: cover;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 12px;
+  filter: opacity(100%);
+}
+
+.name-out, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .name-home, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .name-contact, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .name-portfolio, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .name-resume, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .name-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  position: relative;
+  right: 6.5vh;
+  border-radius: 1vh;
+  height: 1.25vh;
+  width: 4vh;
+  margin-left: 2vh;
+  background-color: white;
+  transition: 0.5s;
+  font-size: 1vh;
+}
+
+.icon-hover-out, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .icon-home, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .icon-contact, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .icon-portfolio, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .icon-resume, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .icon-about {
+  margin-left: -1.5vh;
+  box-shadow: 0px 0px 23px 5px white;
+  background-size: cover;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 12px;
+  filter: opacity(100%);
+}
+
+.name-hover-out, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .name-home, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .name-contact, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .name-portfolio, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .name-resume, .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .name-about {
+  transform: translateX(6.5vh);
+  height: 2.5vh;
+  width: 8vh;
+  font-size: 1.5vh;
+  box-shadow: 0px 0px 23px 5px white;
+}
+
+.icon-socials, .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-linkedin, .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-github, .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-twitter, .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-instagram, .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-facebook {
+  height: 3vh;
+  width: 3vh;
+  border-radius: 0.5vh;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+/* @Extend */
+/* @MAP */
+/* @MAP */
 .contenedor-general {
   height: 100vh;
   width: 100%;
@@ -31,6 +137,9 @@ h2 {
   display: flex;
   justify-content: start;
   align-items: center;
+  color: black;
+  font-size: 1.5vh;
+  font-family: "Signika", sans-serif;
 }
 .contenedor-general .contenedor-1 .barra-menu {
   margin-left: 30%;
@@ -60,306 +169,56 @@ h2 {
 .contenedor-general .contenedor-1 .barra-menu .iconos a {
   text-decoration: none;
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in {
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: 18vh;
-  margin-left: 10vh;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .icon-home-in {
   background-image: url(../img/logo-home2.png);
-  background-color: white;
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 1vh;
-  filter: opacity(100%);
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .name-home-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 0px 23px 5px white;
-  border-radius: 1vh;
-  height: 2.5vh;
-  width: 8vh;
-  margin-left: 2vh;
-  color: black;
-  font-size: 1.5vh;
-  font-family: "Signika", sans-serif;
-  vertical-align: middle;
-  transition: 0.5s;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 18vh;
-  transition: 1s;
-  margin-left: 13vh;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about {
-  background-color: white;
-  height: 5vh;
-  width: 5vh;
   background-image: url(../img/logo-about.png);
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-  transition: 1s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .icon-about:hover {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-about2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .name-about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  position: relative;
-  right: 6.5vh;
-  /* right: 8.5vh; */
-  /* right: 1vh; */
-  color: black;
-  font-size: 0.75vh;
-  font-family: "Signika", sans-serif;
-  border-radius: 1vh;
-  height: 1.25vh;
-  width: 4vh;
-  /* height: 2.5vh; width: 8vh; */
-  /* font-size: 16px; */
-  margin-left: 2vh;
-  background-color: white;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover {
   height: 8vh;
-  /* .icon-home {
-      height: 5vh; width: 5vh;
-      background-image: url(../img/logo-home.png);
-  } */
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .icon-about {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-about2v2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .name-about {
-  transform: translateX(6.5vh);
-  height: 2.5vh;
-  width: 8vh;
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 18vh;
-  transition: 1s;
-  margin-left: 13vh;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume {
-  background-color: white;
-  height: 5vh;
-  width: 5vh;
   background-image: url(../img/logo-resume.png);
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-  transition: 1s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .icon-resume:hover {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-resume2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .name-resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  position: relative;
-  right: 6.5vh;
-  color: black;
-  font-size: 0.75vh;
-  font-family: "Signika", sans-serif;
-  border-radius: 1vh;
-  height: 1.25vh;
-  width: 4vh;
-  margin-left: 2vh;
-  background-color: white;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover {
   height: 8vh;
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .name-resume {
-  transform: translateX(6.5vh);
-  height: 2.5vh;
-  width: 8vh;
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume:hover .icon-resume {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-resume2v2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 18vh;
-  transition: 1s;
-  margin-left: 13vh;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio {
-  background-color: white;
-  height: 5vh;
-  width: 5vh;
   background-image: url(../img/logo-portfolio.png);
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-  transition: 1s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .icon-portfolio:hover {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-portfolio2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .name-portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1.25vh;
-  width: 4vh;
-  z-index: -1;
-  position: relative;
-  right: 6.5vh;
-  color: black;
-  font-size: 0.75vh;
-  font-family: "Signika", sans-serif;
-  border-radius: 1vh;
-  margin-left: 2vh;
-  background-color: white;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover {
   height: 8vh;
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .name-portfolio {
-  transform: translateX(6.5vh);
-  height: 2.5vh;
-  width: 10vh;
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio:hover .icon-portfolio {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-portfolio2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 18vh;
-  transition: 1s;
-  margin-left: 13vh;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact {
-  background-color: white;
-  height: 5vh;
-  width: 5vh;
   background-image: url(../img/logo-contacto.png);
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
-  transition: 1s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .icon-contact:hover {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-contacto2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .name-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  position: relative;
-  right: 6.5vh;
-  color: black;
-  font-size: 0.75vh;
-  font-family: "Signika", sans-serif;
-  border-radius: 1vh;
-  height: 1.25vh;
-  width: 4vh;
-  margin-left: 2vh;
-  background-color: white;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover {
   height: 8vh;
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .name-contact {
-  transform: translateX(6.5vh);
-  height: 2.5vh;
-  width: 8vh;
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact:hover .icon-contact {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-contacto2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
 }
 .contenedor-general .linea-intermedia {
   height: 80vh;
@@ -372,25 +231,21 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index {
-  /* padding: 10vh; */
   display: flex;
   justify-content: space-evenly;
   height: 60vh;
   width: 80%;
-  /* border: solid 1px white; */ /* comentar al final */
   border-radius: 2vh;
-  /* background-image: url(../img/backgroundOPC/black20.png); */
   background-image: url(../img/backgroundOPC/white20.png);
-  /* background-image: url(../img/interior2.png); background-size: cover; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: "Signika", sans-serif;
-  /* background-color: crimson; */
   border-radius: 2vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links {
@@ -402,56 +257,31 @@ h2 {
   filter: opacity(60%);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-facebook {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 0.5vh;
   background-image: url(../img/logo-facebook.png);
-  background-size: cover;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-facebook:hover {
   background-image: url(../img/logo-facebook2.png);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-instagram {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 0.5vh;
   background-image: url(../img/logo-instagram.png);
-  background-size: cover;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-instagram:hover {
   background-image: url(../img/logo-instagram2.png);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-twitter {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 0.5vh;
   background-image: url(../img/logo-twitter.png);
-  background-size: cover;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-twitter:hover {
   background-image: url(../img/logo-twitter2.png);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-github {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 0.5vh;
   background-image: url(../img/logo-github.png);
-  background-size: cover;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-github:hover {
   background-image: url(../img/logo-github2.png);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-linkedin {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 0.5vh;
   background-image: url(../img/logo-linkedin.png);
-  background-size: cover;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-index .content-left .social-links .icon-linkedin:hover {
   background-image: url(../img/logo-linkedin2.png);
@@ -480,116 +310,82 @@ h2 {
   background-size: cover;
   border-radius: 40vh;
 }
-
-.contenedor-general .contenedor-1 .barra-menu .iconos {
-  height: 95%;
+.contenedor-general footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 20vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  filter: opacity(90%);
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos a {
-  text-decoration: none;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home {
-  display: flex;
-  align-items: center;
+.contenedor-general footer .ribbon {
+  position: fixed;
+  left: -6.5vh; /* top: 13vh; */
+  bottom: 2vh;
+  cursor: pointer;
+  width: 19vh;
   height: 5vh;
-  width: 18vh;
-  transition: 1s;
-  margin-left: 13vh;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home {
-  background-color: white;
-  height: 5vh;
-  width: 5vh;
-  background-image: url(../img/logo-home.png);
+  z-index: 4;
+  display: flex;
+  justify-content: end;
+  transition: 2.5s;
+  background-image: url(../img/ribbon-left.png);
   background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
   transition: 1s;
+}
+.contenedor-general footer .ribbon:hover {
+  transform: translateX(3.25vh);
+}
+.contenedor-general footer .ribbon .txt-footer {
+  position: relative;
+  right: 3vh;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+  height: 5vh;
+  width: 7vh;
+  text-align: center;
+}
+.contenedor-general footer .ribbon .footer-active {
+  display: none;
+}
+.contenedor-general footer input {
+  display: none;
+}
+.contenedor-general footer input:checked + .ribbon {
+  left: 0vh;
+  bottom: 0;
+  background-image: url(../img/barra-h.jpg);
+  height: 10vh;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-general footer input:checked + .ribbon:hover {
+  transform: translateX(0vh);
+}
+.contenedor-general footer input:checked + .ribbon .txt-footer {
+  display: none;
+}
+.contenedor-general footer input:checked + .ribbon .footer-active {
+  display: block;
+}
+
+.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home {
+  background-image: url(../img/logo-home.png);
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .icon-home:hover {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-home2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .name-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  position: relative;
-  right: 6.5vh;
-  color: black;
-  font-size: 0.75vh;
-  font-family: "Signika", sans-serif;
-  border-radius: 1vh;
-  height: 1.25vh;
-  width: 4vh;
-  margin-left: 2vh;
-  background-color: white;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover {
   height: 8vh;
 }
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .name-home {
-  transform: translateX(6.5vh);
-  height: 2.5vh;
-  width: 8vh;
-  font-size: 1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home:hover .icon-home {
-  margin-left: -1.5vh;
-  box-shadow: 0px 0px 23px 5px white;
   background-image: url(../img/logo-home2.png);
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 12px;
-  filter: opacity(100%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in {
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: 18vh;
-  margin-left: 10vh;
 }
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .icon-about-in {
   background-image: url(../img/logo-about2v2.png);
-  background-color: white;
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 1vh;
-  filter: opacity(100%);
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .name-about-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 0px 23px 5px white;
-  border-radius: 1vh;
-  height: 2.5vh;
-  width: 8vh;
-  margin-left: 2vh;
-  color: black;
-  font-size: 1.5vh;
-  font-family: "Signika", sans-serif;
-  vertical-align: middle;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor {
   display: flex;
@@ -597,11 +393,8 @@ h2 {
   align-items: center;
   height: 60vh;
   width: 80%;
-  /* border: solid 1px white; */ /* comentar al final */
   border-radius: 2vh;
-  /* background-image: url(../img/backgroundOPC/black20.png); */
   background-image: url(../img/backgroundOPC/white20.png);
-  /* background-image: url(../img/interior2.png); background-size: cover; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about {
   display: flex;
@@ -612,67 +405,21 @@ h2 {
   text-align: center;
   font-family: "Signika", sans-serif;
   color: rgb(92, 82, 86);
-  /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p {
   font-size: 2vh;
   padding: 4vh 8vh;
-  /*  border-radius: 2vh; */
   border: solid 1px white;
   border-radius: 2vh;
   background-image: url(../img/backgroundOPC/white40.png);
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenedor-texto-about p mark {
   color: rgb(92, 82, 86);
-  /* background-image: url(../img/backgroundOPC/black20.png); */
   background-color: white;
-  /* border-radius: 0.1vh; */
 }
 
-.contenedor-general .contenedor-1 .barra-menu .iconos {
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  filter: opacity(90%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos a {
-  text-decoration: none;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in {
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: 18vh;
-  margin-left: 10vh;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .icon-resume-in {
   background-image: url(../img/logo-resume2v2.png);
-  background-color: white;
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 1vh;
-  filter: opacity(100%);
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .name-resume-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 0px 23px 5px white;
-  border-radius: 1vh;
-  height: 2.5vh;
-  width: 8vh;
-  margin-left: 2vh;
-  color: black;
-  font-size: 1.5vh;
-  font-family: "Signika", sans-serif;
-  vertical-align: middle;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-resume {
   display: flex;
@@ -680,11 +427,8 @@ h2 {
   align-items: center;
   height: 90vh;
   width: 90%;
-  /* border: solid 1px white; */ /* comentar al final */
   border-radius: 2vh;
-  /* background-image: url(../img/backgroundOPC/black20.png); */
   background-image: url(../img/backgroundOPC/white20.png);
-  /* background-image: url(../img/interior2.png); background-size: cover; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume {
   display: flex;
@@ -692,7 +436,6 @@ h2 {
   align-items: center;
   height: 100%;
   width: 100%;
-  /* background-color: white; */
   font-size: 1.5vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-resume .contenido-resume .edu-exp {
@@ -758,50 +501,8 @@ h2 {
   background-image: url(../img/cielo2large.jpg);
 }
 
-.contenedor-general .contenedor-1 .barra-menu .iconos {
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  filter: opacity(90%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos a {
-  text-decoration: none;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in {
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: 18vh;
-  margin-left: 10vh;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .icon-portfolio-in {
   background-image: url(../img/logo-portfolio2.png);
-  background-color: white;
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 1vh;
-  filter: opacity(100%);
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .name-portfolio-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 0px 23px 5px white;
-  border-radius: 1vh;
-  height: 2.5vh;
-  width: 8vh;
-  margin-left: 2vh;
-  color: black;
-  font-size: 1.5vh;
-  font-family: "Signika", sans-serif;
-  vertical-align: middle;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-portfolio {
   display: flex;
@@ -809,11 +510,8 @@ h2 {
   height: 70vh;
   width: 80%;
   padding-top: 1vh;
-  /* border: solid 1px white; */ /* comentar al final */
   border-radius: 2vh;
-  /* background-image: url(../img/backgroundOPC/black20.png); */
   background-image: url(../img/backgroundOPC/white20.png);
-  /* background-image: url(../img/interior2.png); background-size: cover; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio {
   height: 95%;
@@ -821,7 +519,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url(../img/backgroundOPC/black20.png);  */
   border-radius: 2vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
@@ -914,50 +611,8 @@ h2 {
   color: white;
 }
 
-.contenedor-general .contenedor-1 .barra-menu .iconos {
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  filter: opacity(90%);
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos a {
-  text-decoration: none;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in {
-  display: flex;
-  align-items: center;
-  height: 8vh;
-  width: 18vh;
-  margin-left: 10vh;
-}
 .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .icon-contact-in {
   background-image: url(../img/logo-contacto2.png);
-  background-color: white;
-  background-size: cover;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 1vh;
-  filter: opacity(100%);
-  box-shadow: 0px 0px 23px 5px white;
-}
-.contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .name-contact-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0px 0px 23px 5px white;
-  border-radius: 1vh;
-  height: 2.5vh;
-  width: 8vh;
-  margin-left: 2vh;
-  color: black;
-  font-size: 1.5vh;
-  font-family: "Signika", sans-serif;
-  vertical-align: middle;
-  transition: 0.5s;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact {
   flex-direction: column;
@@ -970,7 +625,6 @@ h2 {
   text-align: center;
   font-family: "Signika", sans-serif;
   color: rgb(92, 82, 86);
-  /* background-image: url(../img/backgroundOPC/white50.png); border-radius: 2vh; */
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact label {
   font-size: 2.5vh;
@@ -996,7 +650,9 @@ h2 {
   padding: 0.5vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact .button-submit {
+  cursor: pointer;
   font-family: "Signika", sans-serif;
+  font-size: 1.5vh;
   color: rgb(92, 82, 86);
   box-shadow: 0px 0px 5px 1px rgb(22, 175, 230);
   border: solid 1px white;
@@ -1005,9 +661,11 @@ h2 {
   width: 12vh;
 }
 .contenedor-general .contenedor-2 .contenedor-divisor .contenido-contact .button-submit:active {
-  background-color: rgb(22, 175, 230);
-  box-shadow: 0px 0px 5px 1px rgb(67, 188, 231);
+  font-size: 1.5vh;
+  background-color: rgb(7, 40, 52);
+  box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
   border: solid 1px black;
+  color: white;
 }
 
 /* @Media (max-width ...px) { */
@@ -1095,8 +753,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home .name-home {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: -1;
     position: relative;
     right: 1vh;
@@ -1165,8 +823,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about .name-about {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: -1;
     position: relative;
     right: 1vh;
@@ -1183,10 +841,6 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover {
     height: 12.5vh;
-    /* .icon-home {
-        height: 5vh; width: 5vh;
-        background-image: url(../img/logo-home.png);
-    } */
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about:hover .icon-about {
     margin: 0;
@@ -1239,8 +893,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume .name-resume {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: -1;
     position: relative;
     right: 1vh;
@@ -1309,8 +963,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio .name-portfolio {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 1.25vh;
     width: 4vh;
     z-index: -1;
@@ -1379,8 +1033,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact .name-contact {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: -1;
     position: relative;
     right: 1vh;
@@ -1438,8 +1092,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-home-in .name-home-in {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 23px 5px white;
     border-radius: 1vh;
@@ -1473,8 +1127,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-about-in .name-about-in {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 23px 5px white;
     border-radius: 1vh;
@@ -1508,8 +1162,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-resume-in .name-resume-in {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 23px 5px white;
     border-radius: 1vh;
@@ -1543,8 +1197,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-portfolio-in .name-portfolio-in {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 23px 5px white;
     border-radius: 1vh;
@@ -1578,8 +1232,8 @@ h2 {
   }
   .contenedor-general .contenedor-1 .barra-menu .iconos .seccion-contact-in .name-contact-in {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: 0px 0px 23px 5px white;
     border-radius: 1vh;
@@ -1637,11 +1291,8 @@ h2 {
     height: 70vh;
     width: 80%;
     padding-top: 1vh;
-    /* border: solid 1px white; */ /* comentar al final */
     border-radius: 2vh;
-    /* background-image: url(../img/backgroundOPC/black20.png); */
     background-image: url(../img/backgroundOPC/white20.png);
-    /* background-image: url(../img/interior2.png); background-size: cover; */
   }
   .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio {
     height: 95%;
@@ -1649,7 +1300,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url(../img/backgroundOPC/black20.png);  */
     border-radius: 2vh;
   }
   .contenedor-general .contenedor-2 .contenedor-divisor-portfolio .contenido-portfolio .grid-contenido {
@@ -1759,7 +1409,6 @@ h2 {
     align-items: center;
     height: 100%;
     width: 100%;
-    /* background-color: white; */
     font-size: 1.5vh;
   }
   .contenedor-general .contenedor2-resume .contenedor-divisor-resume .contenido-resume .edu-exp {
